@@ -1,0 +1,63 @@
+.f-span-txt--line {
+    text-decoration: line-through;
+    font-size: 12px;
+    line-height: 15px;
+}
+.f-span-txt--16-20 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.tems {
+    color: $gray1;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+// Icons
+.f-span-i {
+    color: $gray3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+        font-family: 'Material Icons';
+        font-size: 1em;
+    }
+    &.email {
+        &::after{
+            content: '\e554';
+        }
+    }
+    &.phone {
+        &::after{
+            content: '\e0cd';
+        }
+    }
+    &.user {
+        &::after{
+            content: '\e853';
+        }
+    }
+    &.house {
+        &::after{
+            content: '\e88a';
+        }
+    }
+    &.city {
+        &::after{
+            content: '\ea40';
+        }
+    }
+    &.world {
+        &::after{
+            content: '\e80b';
+            font-size: 16px;
+            color: $gray3;
+        }
+    }
+    &.post {
+        &::after{
+            content: '\e89b';
+        }
+    }
+}

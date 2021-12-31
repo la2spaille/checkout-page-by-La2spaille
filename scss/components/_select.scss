@@ -1,0 +1,33 @@
+.select {
+    label {
+        &::after {
+            font-family: 'Material Icons';
+            content: "\e5cf";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            height: 21px;
+            width: 21px;
+            font-size: 1em;
+            background: $gray6;
+            color: $gray3;
+            border-radius: 4px;
+            pointer-events: none;
+        }
+    }
+    select {
+        cursor: pointer;
+        appearance: none;
+        color: $gray3;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        &:focus {
+            outline: none;
+        }
+    }
+}

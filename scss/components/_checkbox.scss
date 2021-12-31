@@ -1,0 +1,58 @@
+.w-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    width: 100%;
+    margin: 20px 0 0;
+    input {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        cursor: pointer;
+        &:checked {
+           & + .f-span-checkbox {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .f-span-checkbox {
+        position: relative;
+        display: flex;
+        width: 21px;
+        height: 21px;
+         &::before {
+            content: "";
+            display: flex;
+            position: absolute;
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            border-radius: 4px;
+            border: 1px solid #828282;
+        }
+        &::after {
+            font-family: 'Material Icons';
+            content: "\e876";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            font-size: 1em;
+            background: $orange;
+            color: #fff;
+            border: 1px solid #828282;
+            opacity: 0;
+            border-radius: 4px;
+            transition: 0.4s ease;
+        }
+    }
+    strong {
+        color: $gray2;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

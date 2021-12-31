@@ -1,0 +1,14 @@
+button {
+    margin: 20px 0 0 auto;
+    background: $orange;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 17px 45px;
+    cursor: pointer;
+    &:hover {
+        background: transparent;
+        color: $orange;
+        border-color: $orange;
+    }
+}
