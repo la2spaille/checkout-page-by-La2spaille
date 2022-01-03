@@ -374,6 +374,7 @@ form .w-form-separator {
   width: 21px;
   background: #E0E0E0;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .minus .f-span-i::after {
@@ -523,4 +524,3 @@ form .w-form-separator {
     line-height: 17px;
   }
 }
-/*# sourceMappingURL=style.css.map */
